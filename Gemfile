@@ -30,9 +30,7 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
-end
 
-group :test, :development do
   gem 'cucumber-rails'
   gem 'database_cleaner'
 end
