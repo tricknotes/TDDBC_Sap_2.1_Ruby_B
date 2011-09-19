@@ -7,8 +7,8 @@ end
   visit path_to(page_name)
 end
 
-前提 /^システムに会議室情報として "([^"]*)" が登録されている$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+前提 /^システムに会議室情報として "([^"]*)" が登録されている$/ do |conference_room_name|
+  ConferenceRoom.create!(name: conference_room_name)
 end
 
 もし /^ユーザは "([^"]*)" のリンクをクリックする$/ do |arg1|
