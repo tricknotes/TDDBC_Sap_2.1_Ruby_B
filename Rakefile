@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TddbcPre::Application.load_tasks
+TDDBC::Application.load_tasks
