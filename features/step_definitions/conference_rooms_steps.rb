@@ -24,7 +24,7 @@ end
 end
 
 前提 /^システムに会議室情報が登録されていない$/ do
-  pending # express the regexp above with the code you wish you had
+  ConferenceRoom.destroy_all
 end
 
 ならば /^ページに "([^"]*)" というメッセージが表示されている$/ do |arg1|
