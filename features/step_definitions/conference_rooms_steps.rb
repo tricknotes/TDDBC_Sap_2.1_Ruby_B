@@ -27,6 +27,6 @@ end
   ConferenceRoom.destroy_all
 end
 
-ならば /^ページに "([^"]*)" というメッセージが表示されている$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+ならば /^ページに "([^"]*)" というメッセージが表示されている$/ do |message|
+  page.should have_css("#message", text: message)
 end
