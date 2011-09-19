@@ -19,8 +19,8 @@ end
   page.should have_css("h1", text: title)
 end
 
-ならば /^ページに "([^"]*)" の会議室情報が表示されている$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+ならば /^ページに "([^"]*)" の会議室情報が表示されている$/ do |conference_room_name|
+  page.should have_css("table.conference_rooms tr td", text: conference_room_name)
 end
 
 前提 /^システムに会議室情報が登録されていない$/ do
