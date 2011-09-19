@@ -15,8 +15,8 @@ end
   click_link link
 end
 
-ならば /^システムは "([^"]*)" ページを表示する$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+ならば /^システムは "([^"]*)" ページを表示する$/ do |title|
+  page.should have_css("h1", text: title)
 end
 
 ならば /^ページに "([^"]*)" の会議室情報が表示されている$/ do |arg1|
