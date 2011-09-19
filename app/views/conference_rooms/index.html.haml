@@ -1,0 +1,23 @@
+%h1 Listing conference_rooms
+
+%table
+  %tr
+    %th Name
+    %th Capacity
+    %th Location
+    %th
+    %th
+    %th
+
+  - @conference_rooms.each do |conference_room|
+    %tr
+      %td= conference_room.name
+      %td= conference_room.capacity
+      %td= conference_room.location
+      %td= link_to 'Show', conference_room
+      %td= link_to 'Edit', edit_conference_room_path(conference_room)
+      %td= link_to 'Destroy', conference_room, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Conference room', new_conference_room_path

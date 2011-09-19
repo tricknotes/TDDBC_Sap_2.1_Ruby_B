@@ -1,0 +1,2 @@
+module ConferenceRoomsHelper
+end

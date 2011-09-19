@@ -1,4 +1,6 @@
 TDDBC::Application.routes.draw do
+  resources :conference_rooms
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

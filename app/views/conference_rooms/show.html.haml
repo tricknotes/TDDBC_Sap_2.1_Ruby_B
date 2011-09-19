@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @conference_room.name
+%p
+  %b Capacity:
+  = @conference_room.capacity
+%p
+  %b Location:
+  = @conference_room.location
+
+= link_to 'Edit', edit_conference_room_path(@conference_room)
+\|
+= link_to 'Back', conference_rooms_path
