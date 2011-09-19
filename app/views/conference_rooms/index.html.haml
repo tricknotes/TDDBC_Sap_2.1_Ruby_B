@@ -1,5 +1,9 @@
 %h1 会議室一覧
 
+- if @conference_rooms.empty?
+  %div#message
+    会議室は1件も表示されていません
+
 %table.conference_rooms
   %tr
     %th Name
