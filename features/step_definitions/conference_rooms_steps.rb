@@ -1,6 +1,6 @@
 # encoding: utf-8
-前提 /^ユーザは "([^"]*)" としてログインしている$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+前提 /^ユーザは "([^"]*)" としてログインしている$/ do |user_name|
+  # ログイン機能未実装のためskip
 end
 
 前提 /^システムの "([^"]*)" が表示されている$/ do |arg1|
